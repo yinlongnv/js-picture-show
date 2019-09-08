@@ -1,0 +1,87 @@
+body,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+img,
+a {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+img {
+  border: 0;
+}
+/* 图片展示上移效果 */
+.picList .col {
+  width: 300px;
+  height: 200px;
+  float: left;
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.picList .col img {
+  width: 300px;
+  height: 200px;
+}
+
+.picList .col a {
+  width: 300px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: 180px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  opacity: 0.8;
+}
+.demo {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+#orginImg li {
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+#orginImg li a {
+  display: block;
+}
+#orginImg li a img {
+  width: 300px;
+  height: 200px;
+}
+#orginImg li div {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 22;
+  background: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  height: 200px;
+  display: none;
+}
+#orginImg li div dl {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+#orginImg li div dl dt {
+  text-align: center;
+}
+#orginImg li div dl dd {
+  text-indent: 2em;
+}
